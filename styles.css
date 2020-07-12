@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#navbar {
+  display: flex;
+  background-color: cornflowerblue;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+body > h1 {
+  color: dimgrey;
+}
+#create_user {
+  margin: auto;
+  display: flex;
+  border: 1px black solid;
+  padding: 1rem;
+  flex-direction: column;
+  color: dimgrey;
+  border-radius: 1rem;
+  align-items: flex-start;
+  width: 50%;
+}
+
+#create_user > div{
+  margin: 1rem;
+}
+
+#user_inputs {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+
+
+#user_inputs > label {
+  flex-basis: calc(40% - 2rem);
+  margin: 1rem;
+}
+
+#user_inputs > input, select {
+  flex-basis: calc(60% - 3rem);
+  width: 100%;
+  margin: 1rem;
+}
+
+#buttons {
+  align-self: center;
+}
+
+#buttons > input:nth-child(2) {
+  color: white;
+  background-color: cornflowerblue;
+}
+
+#users {
+  display: flex;
+  flex-direction: rows;
+  flex-wrap: wrap;
+}
+
+.user {
+  flex-basis: calc(33% - 4rem);
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: dimgrey;
+  margin: 1rem;
+}
+
+@media (max-width: 600px) {
+  #navbar, #users, #user_inputs {
+    flex-direction: column;
+  }
+  .user {
+    flex-basis: calc(100% - 2 rem);
+  }
+  #buttons > input {
+    width: 100%;
+  }
+ }
